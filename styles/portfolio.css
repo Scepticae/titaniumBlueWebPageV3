@@ -1,0 +1,72 @@
+.unused-button {
+  display: none;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.row {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2vw;
+  display: flex;
+}
+
+/* Portfolio Button Section */
+.portfolio-section {
+  margin-top: 5vw;
+}
+
+.center-button {
+  text-align: center;
+}
+
+.center-button button {
+  margin-top: 0;
+}
+
+/* Portfolio Cards */
+.card {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 0.55vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color);
+}
+
+.image-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.project-header {
+  flex: 1;
+  padding: 2vw;
+}
+
+.project-header h3 {
+  font-size: 1.3vw;
+}
+
+.project-header p {
+  font-size: 1vw;
+  line-height: 1.5;
+  margin-top: 1.4vw;
+  margin-bottom: 0;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fit;
+  border-radius: 0.55vw 0.55vw 0 0;
+}

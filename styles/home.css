@@ -1,0 +1,16 @@
+.portfolio {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  margin-left: 1vw;
+}
+
+.portfolio:hover {
+  background-color: #f6f6f6;
+}
+
+.homepage-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 0.55vw;
+}

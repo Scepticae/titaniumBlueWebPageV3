@@ -1,0 +1,86 @@
+.centered-text {
+  text-align: center;
+}
+
+/* Contact page styles */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-top: 1.4vw;
+  background-color: var(--bg-color);
+  padding: 1vw;
+  border-radius: 0.55vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  width: 3vw;
+  height: auto;
+  margin-right: 1.4vw;
+  object-fit: contain;
+}
+
+.contact-header {
+  font-size: 1.7vw;
+}
+
+h4 {
+  font-size: 1.3vw;
+}
+
+.contact-text p {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Contact form styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.55vw;
+}
+
+.contact-form label {
+  margin-bottom: 0.35vw;
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 1.2vw;
+  letter-spacing: 0.5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1vw;
+  padding: 0.7vw;
+  border: none;
+  border-radius: 0.55vw;
+  font-size: 1.2vw;
+  font-family: inherit;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--light-text);
+  font-weight: 300;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 7vw;
+}
+
+.contact-form .cta-button {
+  align-self: flex-start;
+  padding: 0.7vw 1.4vw;
+  width: 100%;
+}

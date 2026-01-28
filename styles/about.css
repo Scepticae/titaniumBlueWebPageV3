@@ -1,0 +1,30 @@
+.homepage-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.55vw;
+}
+
+/* About page list styles */
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 2vw;
+  margin-bottom: 0.7vw;
+  font-size: 1.1vw;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.about-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2vw;
+}

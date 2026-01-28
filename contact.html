@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - titaniumBlue</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <img src="images/logos/ModernTitaniumBlueLogo.png" alt="titaniumBlue Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a class="selected" href="contact.html">Contact</a>
+        </nav>
+        <button disabled class="cta-button">Contact Us</button>
+    </header>
+    <h1 class="centered-text">Get In Touch</h1>
+    <p class="centered-text">Ready to start your next project? <br>Let's discuss 
+        how to help your business grow.
+    </p>
+
+    <div class="container">
+        <div class="column">
+            <div>
+            <h2 class="contact-header">Contact Information</h2>
+                <div class="contact-item">
+                    <img src="images/icons/Contact Icons/email_2.png" alt="Email Icon" class="contact-icon">
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>titaniumblue@titaniumblue.tech</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img src="images/icons/Contact Icons/mobile.png" alt="Phone Icon" class="contact-icon">
+                    <div class="contact-text">
+                        <h4>Phone</h4>
+                        <p>(865)776-6261</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img src="images/icons/Contact Icons/location.png" alt="Location Icon" class="contact-icon">
+                    <div class="contact-text">
+                        <h4>Location</h4>
+                        <p>Knoxville, TN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <form class="contact-form" id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container"> 
+            <div class="column">
+                <p>&copy; 2026 titaniumBlue. All rights reserved.</p>
+            </div>
+            <div class="column">
+                <div>   
+                    <p><a rel="noopener" target="_blank" href="https://icons8.com/icon/X0mEIh0RyDdL/email">Email</a> icon by <a rel="noopener" target="_blank" href="https://icons8.com">Icons8</a></p>
+                    <p><a rel="noopener" target="_blank" href="https://icons8.com/icon/18txcSQ3wJcU/iphone-14">iPhone 14</a> icon by <a rel="noopener" target="_blank" href="https://icons8.com">Icons8</a></p>
+                    <p><a rel="noopener" target="_blank" href="https://icons8.com/icon/HZC1E42sHiI3/navigation">Navigation</a> icon by <a rel="noopener" target="_blank" href="https://icons8.com">Icons8</a></p>
+                </div>          
+            </div>
+        </div> 
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* Basic CSS for titaniumBlue Website */
+
+/* CSS Custom Properties */
+:root {
+  --primary-color: #096dbb;
+  --secondary-color: #096ebbae;
+  --text-color: #333;
+  --bg-color: #fff;
+  --border-color: #ddd;
+  --light-text: #bbb;
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 13vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Menu Bar styles */
+/* Header styles */
+header {
+  position: fixed;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 2vw 7vw;
+  height: auto;
+  background-color: var(--bg-color);
+  justify-content: space-between;
+  gap: 2vw;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Logo styles */
+.logo {
+  width: 10vw;
+  height: auto;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  gap: 2vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1vw;
+  font-weight: 100;
+  padding: 0.7vw;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+.selected {
+  font-weight: bold;
+}
+
+/* CTA Button styles */
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  width: 12vw;
+  height: 3.5vw;
+  border: none;
+  padding: 0.7vw 1.25vw;
+  border-radius: 0.35vw;
+  cursor: pointer;
+  font-size: 1vw;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.cta-button:disabled {
+  background-color: var(--border-color);
+  cursor: not-allowed;
+}
+
+/* Container and columns */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2vw;
+  color: var(--text-color);
+  margin-bottom: 2vw;
+  line-height: 1.2;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 1vw;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  margin-bottom: 2vw;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  margin-top: 4.85vw;
+  padding: 2vw;
+}
+
+footer .column {
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: left;
+  font-size: 0.8vw;
+  margin-bottom: 0;
+}
+
+footer a {
+  font-size: 0.8vw;
+  color: #f6f6f6a1;
+  text-decoration: none;
+}
