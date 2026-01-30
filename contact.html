@@ -81,7 +81,26 @@
     </footer>
 
     <!-- Link to external JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Contact form submission handling
+        emailjs.init("kJaTMiVWo9ma7F1UJ");
+
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_v19j84p", "template_s0ka18a", this).then(
+            function () {
+            alert("Message sent!");
+            document.getElementById("contactForm").reset();
+            },
+            function (error) {
+            alert("Failed to send message");
+            console.error(error);
+            }
+        );
+        });
+    </script>
 </body>
 </html>
