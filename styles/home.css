@@ -1,3 +1,7 @@
+.desktop-hide {
+  display: none;
+}
+
 .portfolio {
   background-color: var(--bg-color);
   color: var(--primary-color);
@@ -13,4 +17,54 @@
   width: 100%;
   height: auto;
   border-radius: 0.55vw;
+}
+
+/* Responsive design for mobile devices for home page */
+@media (max-width: 480px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .mobile-container {
+    flex-direction: column;
+  }
+
+  .desktop-hide {
+    display: inherit;
+  }
+
+  .portfolio {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  .homepage-pic {
+    border-radius: 2vw;
+    width: 100%;
+    margin-top: 20vw;
+  }
+
+  h1 {
+    font-size: 5.5vw;
+    margin-top: 7vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  .mobile-btns {
+    margin-top: 7vw;
+  }
+
+  .mobile-btn {
+    width: 35vw;
+    height: 10vw;
+    border-radius: 2vw;
+    font-size: 3.5vw;
+  }
+
+  footer {
+    margin-top: 7vw;
+  }
 }

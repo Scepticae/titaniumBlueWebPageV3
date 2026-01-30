@@ -23,3 +23,11 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     }
   );
 });
+
+// Hamburger Button Action
+const hamburgerBtn = document.getElementById("hamburger");
+const openNav = document.getElementById("open");
+
+hamburgerBtn.addEventListener("click", () => {
+  openNav.classList.toggle("open");
+});

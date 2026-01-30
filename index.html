@@ -12,16 +12,20 @@
 <body>
     <header>
         <img src="images/logos/ModernTitaniumBlueLogo.png" alt="titaniumBlue Logo" class="logo">
-        <nav>
+        <nav id="open" class="open">
             <a class="selected" href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <button onclick="window.location.href='contact.html'" class="cta-button">Contact Us</button>
+        <button onclick="window.location.href='contact.html'" class="cta-button mobile-hide">Contact Us</button>
+        <button id="hamburger" class="desktop-hide hamburger-btn"><img src="images/icons/Menu Icons/hamburger-menu-48.png" alt="hamburger menu by icons8" class="menu-icon"></button>
     </header>
-    <div class="container">
+    <div class="container mobile-container">
+        <div class="column desktop-hide">
+            <img src="images/photos/homepagepic.jpg" alt="Photo by Christopher Gower on Unsplash" class="homepage-pic">
+        </div>
         <div class="column">
             <h1>Professional Web<br>Development Solutions</h1>
             <p>Creating stunning, high-performance web applications that help your business 
@@ -30,12 +34,12 @@
               to deployment, expert support every step of the way to ensure your project 
               exceeds expectations.
             </p>
-            <div>
-                <button onclick="window.location.href='services.html'" class="cta-button">Learn More</button>
-                <button onclick="window.location.href='portfolio.html'" class="cta-button portfolio">Previous Works</button>
+            <div class="mobile-btns">
+                <button onclick="window.location.href='services.html'" class="cta-button mobile-btn">Learn More</button>
+                <button onclick="window.location.href='portfolio.html'" class="cta-button portfolio mobile-btn">Previous Works</button>
             </div>
         </div>
-        <div class="column">
+        <div class="column mobile-hide">
             <img src="images/photos/homepagepic.jpg" alt="Photo by Christopher Gower on Unsplash" class="homepage-pic">
         </div>
     </div>
