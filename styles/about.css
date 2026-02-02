@@ -1,3 +1,7 @@
+.desktop-hide {
+  display: none;
+}
+
 .homepage-pic {
   max-width: 100%;
   height: auto;
@@ -33,6 +37,10 @@
 @media (max-width: 480px) {
   .mobile-container {
     flex-direction: column;
+  }
+
+  .desktop-hide {
+    display: inherit;
   }
 
   .homepage-pic {
