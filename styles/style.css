@@ -167,6 +167,10 @@ footer a {
     background-color: inherit;
   }
 
+  .mobile-hide {
+    display: none;
+  }
+
   .menu-icon {
     width: 10.5vw;
     max-width: 48px;

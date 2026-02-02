@@ -11,16 +11,17 @@
 <body>
     <header>
         <img src="images/logos/ModernTitaniumBlueLogo.png" alt="titaniumBlue Logo" class="logo">
-        <nav>
+        <nav id="open" class="open">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a class="selected" href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <button onclick="window.location.href='contact.html'" class="cta-button">Contact Us</button>
+        <button onclick="window.location.href='contact.html'" class="cta-button mobile-hide">Contact Us</button>
+        <button id="hamburger" class="desktop-hide hamburger-btn"><img src="images/icons/Menu Icons/hamburger-menu-48.png" alt="hamburger menu by icons8" class="menu-icon"></button>
     </header>
-    <div class="container">
+    <div class="container mobile-container">
         <div class="column">
             <img src="images/photos/aboutus.jpg" alt="About Us Picture by Unsplash" class="homepage-pic">
         </div>
