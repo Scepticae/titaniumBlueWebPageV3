@@ -2,6 +2,24 @@
   display: none;
 }
 
+.section-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 5vw 0;
+}
+
+.section-spacing {
+  margin-top: 0.8vw;
+}
+
+h4 {
+  margin-top: 0.8vw;
+}
+
+p {
+  margin: 0.8vw 0;
+}
+
 .portfolio {
   background-color: var(--bg-color);
   color: var(--primary-color);
@@ -17,6 +35,34 @@
   width: 100%;
   height: auto;
   border-radius: 0.55vw;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 2vw;
+  margin-bottom: 0.7vw;
+  font-size: 1.1vw;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.about-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.cta-button {
+  margin-top: 1vw;
 }
 
 /* Responsive design for mobile devices for home page */
@@ -37,17 +83,36 @@
   .homepage-pic {
     border-radius: 2vw;
     width: 100%;
-    margin-top: 20vw;
   }
 
   h1 {
     font-size: 5.5vw;
     margin-top: 7vw;
+    margin-bottom: 7vw;
+  }
+
+  h4 {
+    font-size: 4.2vw;
   }
 
   p {
-    font-size: 4vw;
+    font-size: 3.8vw;
     font-weight: 400;
+    margin-top: 4.2vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .section-spacing {
+    margin-top: 4.2vw;
+  }
+
+  .about-list li {
+    font-size: 3.5vw;
+    padding-left: 5vw;
+  }
+
+  .about-list li::before {
+    font-size: 3.5vw;
   }
 
   .mobile-btns {
