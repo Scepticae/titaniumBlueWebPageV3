@@ -13,13 +13,13 @@
 .section-container {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 1rem;
 }
 
 .row {
   flex-direction: row;
   justify-content: space-between;
-  gap: 2vw;
+  gap: 1rem;
   display: flex;
 }
 
@@ -42,8 +42,8 @@
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border-color);
-  border-radius: 0.55vw;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
   background-color: var(--bg-color);
 }
 
@@ -54,17 +54,17 @@
 
 .project-header {
   flex: 1;
-  padding: 2vw;
+  padding: 1rem;
 }
 
 .project-header h3 {
-  font-size: 1.3vw;
+  font-size: 1.25rem;
 }
 
 .project-header p {
-  font-size: 1vw;
+  font-size: 1rem;
   line-height: 1.5;
-  margin-top: 1.4vw;
+  margin-top: 0.9rem;
   margin-bottom: 0;
 }
 
@@ -76,6 +76,16 @@
 }
 
 /* Responsive design for mobile devices for home page */
+@media (max-width: 1024px) {
+  .section-container {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .project-header {
+    padding: 0.9rem;
+  }
+}
+
 @media (max-width: 480px) {
   .mobile-container {
     flex-direction: column;
@@ -86,29 +96,29 @@
   }
 
   .section-container {
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   h1 {
-    margin-top: 35vw;
-    font-size: 4.2vw;
+    margin-top: 8.75rem;
+    font-size: 2.25rem;
   }
 
   p {
-    font-size: 3vw;
+    font-size: 1.125rem;
   }
 
   .project-header {
-    padding: 5vw;
+    padding: 1.25rem;
   }
 
   .project-header h3 {
-    font-size: 3vw;
+    font-size: 1.25rem;
   }
 
   .project-header p {
-    font-size: 2vw;
+    font-size: 1rem;
     font-weight: 300;
   }
 

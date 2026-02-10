@@ -10,26 +10,26 @@
 .contact-item {
   display: flex;
   align-items: center;
-  margin-top: 1.4vw;
+  margin-top: 1rem;
   background-color: var(--bg-color);
-  padding: 1vw;
-  border-radius: 0.55vw;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .contact-icon {
-  width: 3vw;
+  width: 3rem;
   height: auto;
-  margin-right: 1.4vw;
+  margin-right: 1rem;
   object-fit: contain;
 }
 
 .contact-header {
-  font-size: 1.7vw;
+  font-size: 1.25rem;
 }
 
 h4 {
-  font-size: 1.3vw;
+  font-size: 1.125rem;
 }
 
 .contact-text p {
@@ -43,26 +43,26 @@ h4 {
 .contact-form {
   display: flex;
   flex-direction: column;
-  border-radius: 0.55vw;
+  border-radius: 0.5rem;
 }
 
 .contact-form label {
-  margin-bottom: 0.35vw;
+  margin-bottom: 0.25rem;
   font-weight: bold;
   color: var(--text-color);
-  font-size: 1.2vw;
-  letter-spacing: 0.5px;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-  margin-bottom: 1vw;
-  padding: 0.7vw;
+  margin-bottom: 0.75rem;
+  padding: 0.6rem;
   border: none;
-  border-radius: 0.55vw;
-  font-size: 1.2vw;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   font-family: inherit;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
 }
 
@@ -80,16 +80,26 @@ h4 {
 
 .contact-form textarea {
   resize: vertical;
-  min-height: 7vw;
+  min-height: 7rem;
 }
 
 .contact-form .cta-button {
-  align-self: flex-start;
-  padding: 0.7vw 1.4vw;
+  align-self: stretch;
+  padding: 0.6rem 1rem;
   width: 100%;
 }
 
 /* Responsive design for mobile devices for home page */
+@media (max-width: 1024px) {
+  .contact-item {
+    padding: 0.9rem;
+    margin-top: 0.75rem;
+  }
+  .contact-icon {
+    width: 2.5rem;
+  }
+}
+
 @media (max-width: 480px) {
   .desktop-hide {
     display: inherit;
@@ -97,47 +107,47 @@ h4 {
 
   .mobile-container {
     flex-direction: column;
-    margin-top: 15vw;
+    margin-top: 3.5rem;
   }
 
   h2.contact-header {
-    font-size: 4vw;
+    font-size: 1.75rem;
   }
 
   .contact-item {
-    padding: 3vw;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .contact-item img {
-    width: 5vw;
+    width: 3rem;
     height: auto;
   }
 
   .contact-text {
-    padding-left: 3vw;
+    padding-left: 0.75rem;
   }
 
   .contact-text h4 {
-    font-size: 2.5vw;
+    font-size: 1.25rem;
   }
 
   .contact-text p {
-    font-size: 2vw;
+    font-size: 1.125rem;
   }
 
   .contact-form label,
   .contact-form input,
   .contact-form textarea {
-    font-size: 2.5vw;
-    margin-bottom: 2vw;
-    padding: 2vw;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
   }
 
   .contact-form .cta-button {
-    height: 5vw;
-    border-radius: 3px;
-    font-size: 2vw;
+    height: auto;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
   }
 }

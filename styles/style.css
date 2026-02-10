@@ -8,6 +8,13 @@
   --bg-color: #fff;
   --border-color: #ddd;
   --light-text: #bbb;
+  /* Spacing and sizing (use rem/em for responsiveness) */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --btn-radius: 0.35rem;
 }
 
 /* Reset some default styles */
@@ -17,15 +24,19 @@
   box-sizing: border-box;
 }
 
+.html {
+  font-size: 100%;
+}
+
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
-  margin-left: 7vw;
-  margin-right: 7vw;
-  margin-top: 13vw;
+  margin: 12rem 0 0 0;
+  padding: 0 6vw;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -39,33 +50,33 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  padding: 2vw 7vw;
+  padding: 2rem 6vw;
   height: auto;
   background-color: var(--bg-color);
   justify-content: space-between;
-  gap: 2vw;
+  gap: var(--space-md);
   align-items: center;
   z-index: 1000;
 }
 
 /* Logo styles */
 .logo {
-  width: 10vw;
+  width: 8rem;
   height: auto;
 }
 
 /* Navigation styles */
 nav {
   display: flex;
-  gap: 2vw;
+  gap: var(--space-md);
 }
 
 nav a {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 1vw;
-  font-weight: 100;
-  padding: 0.7vw;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
   transition: color 0.3s;
 }
 
@@ -81,13 +92,12 @@ nav a:hover {
 .cta-button {
   background-color: var(--primary-color);
   color: white;
-  width: 12vw;
-  height: 3.5vw;
+  min-width: 7rem;
   border: none;
-  padding: 0.7vw 1.25vw;
-  border-radius: 0.35vw;
+  padding: 0.6rem 1rem;
+  border-radius: var(--btn-radius);
   cursor: pointer;
-  font-size: 1vw;
+  font-size: 1rem;
   transition: background-color 0.3s;
 }
 
@@ -114,27 +124,27 @@ nav a:hover {
 
 /* Heading styles */
 h1 {
-  font-size: 2vw;
+  font-size: 3rem;
   color: var(--text-color);
-  margin-bottom: 2vw;
+  margin-bottom: var(--space-lg);
   line-height: 1.2;
 }
 
 /* Paragraph styles */
 p {
-  font-size: 1vw;
-  font-weight: 100;
-  letter-spacing: 1.2px;
-  margin-bottom: 2vw;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.075rem;
+  margin-bottom: var(--space-md);
 }
 
 /* Footer styles */
 footer {
   background-color: var(--primary-color);
-  margin-top: 4.85vw;
-  padding: 2vw;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  margin-top: var(--space-xl);
+  padding: var(--space-md);
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
 }
 
 footer .column {
@@ -144,24 +154,26 @@ footer .column {
 
 footer p {
   text-align: left;
-  font-size: 0.8vw;
-  margin: 0.25vw 0;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
 }
 
 footer a {
-  font-size: 0.8vw;
+  font-size: 0.9rem;
   color: #f6f6f6a1;
   text-decoration: none;
 }
 
 @media (max-width: 480px) {
   header {
-    padding: 3.5vw 7vw;
+    padding: 1rem;
     height: auto;
+    flex-direction: row;
+    gap: var(--space-sm);
   }
 
   .logo {
-    width: 27.5vw;
+    width: 6.5rem;
   }
 
   .hamburger-btn {
@@ -174,13 +186,13 @@ footer a {
   }
 
   .menu-icon {
-    width: 10.5vw;
+    width: 2.5rem;
     max-width: 48px;
     height: auto;
   }
 
   .menu-icon:hover {
-    opacity: 70%;
+    opacity: 0.7;
   }
 
   .open {
@@ -190,19 +202,19 @@ footer a {
   nav {
     flex-direction: column;
     position: fixed;
-    right: 5vw;
-    top: 25vw;
-    padding: 3vw;
-    border-radius: 8px;
+    right: 1rem;
+    top: 6.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
     background-color: inherit;
   }
 
   nav a {
-    font-size: 3vw;
+    font-size: 1.6rem;
   }
 
   footer p,
   footer a {
-    font-size: 1vw;
+    font-size: 0.95rem;
   }
 }

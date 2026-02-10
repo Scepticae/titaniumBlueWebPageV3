@@ -5,36 +5,42 @@
 .section-divider {
   border: none;
   border-top: 1px solid #ddd;
-  margin: 5vw 0;
+  margin: 2rem 0;
 }
 
 .section-spacing {
-  margin-top: 0.8vw;
+  margin-top: 0.5rem;
 }
 
-h4 {
-  margin-top: 0.8vw;
+h3 {
+  margin-top: 0.5rem;
 }
 
 p {
-  margin: 0.8vw 0;
+  margin: 0.5rem 0;
 }
 
 .portfolio {
   background-color: var(--bg-color);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  margin-left: 1vw;
+  margin-left: 0.5rem;
 }
 
 .portfolio:hover {
   background-color: #f6f6f6;
 }
 
+.column {
+  overflow: hidden;
+}
+
 .homepage-pic {
   width: 100%;
-  height: auto;
-  border-radius: 0.55vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
 }
 
 .about-list {
@@ -44,9 +50,9 @@ p {
 
 .about-list li {
   position: relative;
-  padding-left: 2vw;
-  margin-bottom: 0.7vw;
-  font-size: 1.1vw;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.0625rem;
   color: var(--text-color);
   line-height: 1.5;
 }
@@ -58,14 +64,25 @@ p {
   top: 0;
   color: var(--primary-color);
   font-weight: bold;
-  font-size: 1.2vw;
+  font-size: 1.25rem;
 }
 
 .cta-button {
-  margin-top: 1vw;
+  margin-top: 0.75rem;
 }
 
 /* Responsive design for mobile devices for home page */
+@media (max-width: 1024px) {
+  .portfolio {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .about-list li {
+    font-size: 1rem;
+    padding-left: 1.25rem;
+  }
+}
+
 @media (max-width: 480px) {
   .mobile-container {
     flex-direction: column;
@@ -76,57 +93,59 @@ p {
   }
 
   .portfolio {
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .homepage-pic {
-    border-radius: 2vw;
+    border-radius: 1rem;
     width: 100%;
   }
 
   h1 {
-    font-size: 5.5vw;
-    margin-top: 7vw;
-    margin-bottom: 7vw;
+    font-size: 2.5rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
   }
 
-  h4 {
-    font-size: 4.2vw;
+  h3 {
+    font-size: 1.4rem;
   }
 
   p {
-    font-size: 3.8vw;
+    font-size: 1.125rem;
     font-weight: 400;
-    margin-top: 4.2vw;
-    margin-bottom: 4.2vw;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .section-spacing {
-    margin-top: 4.2vw;
+    margin-top: 1.25rem;
   }
 
   .about-list li {
-    font-size: 3.5vw;
-    padding-left: 5vw;
+    font-size: 1.25rem;
+    padding-left: 1.5rem;
   }
 
   .about-list li::before {
-    font-size: 3.5vw;
+    font-size: 1.25rem;
   }
 
   .mobile-btns {
-    margin-top: 7vw;
+    margin-top: 1.75rem;
   }
 
   .mobile-btn {
     width: 35vw;
     height: 10vw;
-    border-radius: 2vw;
-    font-size: 3.5vw;
+    border-radius: 1rem;
+    font-size: 1.25rem;
   }
 
   footer {
-    margin-top: 7vw;
+    margin-top: 1.75rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
   }
 }
