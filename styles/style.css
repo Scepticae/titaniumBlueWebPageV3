@@ -165,6 +165,10 @@ footer a {
 }
 
 @media (max-width: 480px) {
+  body {
+    margin-top: 8rem;
+  }
+
   header {
     padding: 1rem;
     height: auto;
@@ -213,8 +217,16 @@ footer a {
     font-size: 1.6rem;
   }
 
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--space-sm);
+    align-items: center;
+  }
+
   footer p,
   footer a {
-    font-size: 0.95rem;
+    font-size: 0.875rem;
+    text-align: center;
   }
 }
