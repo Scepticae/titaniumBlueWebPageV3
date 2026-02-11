@@ -216,7 +216,11 @@ footer a {
 
   nav a {
     font-size: 1.25rem;
-    background-color: inherit;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  nav a:active {
+    background-color: whitesmoke;
   }
 
   footer {
