@@ -109,49 +109,57 @@ h4 {
     display: inherit;
   }
 
-  .mobile-container {
-    flex-direction: column;
-    margin-top: 3.5rem;
+  .container-spacing {
+    margin-top: 0;
   }
 
-  h2.contact-header {
-    font-size: 1.75rem;
+  .mobile-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .contact-item {
-    padding: 1.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    padding: 0.625rem;
   }
 
   .contact-item img {
-    width: 3rem;
+    width: 1.5rem;
     height: auto;
-  }
-
-  .contact-text {
-    padding-left: 0.75rem;
-  }
-
-  .contact-text h4 {
-    font-size: 1.25rem;
-  }
-
-  .contact-text p {
-    font-size: 1.125rem;
   }
 
   .contact-form label,
   .contact-form input,
   .contact-form textarea {
     font-size: 1rem;
-    margin-bottom: 0.75rem;
-    padding: 0.75rem;
+    margin-bottom: 0.25rem;
+    padding: 0.25rem;
   }
 
   .contact-form .cta-button {
     height: auto;
     border-radius: 0.3125rem;
     font-size: 1rem;
+    margin-top: 1rem;
   }
 }

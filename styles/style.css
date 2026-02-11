@@ -208,13 +208,15 @@ footer a {
     position: fixed;
     right: 1rem;
     top: 6.5rem;
-    padding: 1rem;
+    padding: 0.25rem;
     border-radius: 0.5rem;
     background-color: inherit;
+    gap: var(--space-xs);
   }
 
   nav a {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
+    background-color: inherit;
   }
 
   footer {
